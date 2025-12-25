@@ -39,14 +39,18 @@ pip install numpy pandas matplotlib seaborn
 
 # Machine Learning & Computer Vision
 pip install scikit-learn opencv-python pillow
+
+# Optional (for legacy Excel files)
+pip install openpyxl
 ```
 
 ### 2. Dependency Breakdown
 | Library | Usage | Importance |
 | :--- | :--- | :--- |
-| **`scikit-learn`** | The brain of the operation. Used for `MLPClassifier`, `MLPRegressor`, `SVC`, `SVR`, and metrics (`accuracy_score`, `r2_score`). | 🔴 **Critical** |
-| **`pandas`** | Data wrangling for CSV datasets (Iris, COVID-19). Handling missing values and rolling windows. | 🔴 **Critical** |
+| **`scikit-learn`** | The brain of the operation. Used for `MLPClassifier`, `MLPRegressor`, `SVC`, `SVR`, and metrics (`accuracy_score`, `r2_score`). Includes **`joblib`** for model persistence. | 🔴 **Critical** |
+| **`pandas`** | Data wrangling for CSV datasets. Handling missing values and rolling windows. *(Note: Requires `openpyxl` if reading .xlsx files)* | 🔴 **Critical** |
 | **`numpy`** | Low-level matrix operations, especially for flattening images and reshaping arrays. | 🔴 **Critical** |
+| **`seaborn`** | **Statistical Data Visualization**. Used for creating informative Heatmaps (Confusion Matrices) and aesthetic distribution plots. | 🟡 **High** |
 | **`matplotlib`** | Plotting training history, confusion matrices, and forecasting trends. | 🟡 **High** |
 | **`opencv-python`** | Advanced image loading and processing for `cv2` based labs. | 🟡 **High** |
 | **`Pillow` (PIL)** | Alternative lightweight image handling for simpler datasets. | 🟡 **High** |
@@ -96,7 +100,7 @@ pip install scikit-learn opencv-python pillow
 
 3.  **View Results**
     *   **Console**: Accuracy scores, confusion matrices, and R2 scores will be printed.
-    *   **Visuals**: Matplotlib windows will pop up showing prediction graphs and trend comparisons.
+    *   **Visuals**: Matplotlib/Seaborn windows will pop up showing prediction graphs and trend comparisons.
 
 ---
 
