@@ -47,13 +47,13 @@ pip install openpyxl
 ### 2. Dependency Breakdown
 | Library | Usage | Importance |
 | :--- | :--- | :--- |
-| **`scikit-learn`** | The brain of the operation. Used for `MLPClassifier`, `MLPRegressor`, `SVC`, `SVR`, and metrics (`accuracy_score`, `r2_score`). Includes **`joblib`** for model persistence. | 🔴 **Critical** |
-| **`pandas`** | Data wrangling for CSV datasets. Handling missing values and rolling windows. *(Note: Requires `openpyxl` if reading .xlsx files)* | 🔴 **Critical** |
-| **`numpy`** | Low-level matrix operations, especially for flattening images and reshaping arrays. | 🔴 **Critical** |
-| **`seaborn`** | **Statistical Data Visualization**. Used for creating informative Heatmaps (Confusion Matrices) and aesthetic distribution plots. | 🟡 **High** |
-| **`matplotlib`** | Plotting training history, confusion matrices, and forecasting trends. | 🟡 **High** |
-| **`opencv-python`** | Advanced image loading and processing for `cv2` based labs. | 🟡 **High** |
-| **`Pillow` (PIL)** | Alternative lightweight image handling for simpler datasets. | 🟡 **High** |
+| [**`scikit-learn`**](https://scikit-learn.org/) | The brain of the operation. Used for `MLPClassifier`, `MLPRegressor`, `SVC`, `SVR`, and metrics (`accuracy_score`, `r2_score`). Includes **`joblib`** for model persistence. | 🔴 **Critical** |
+| [**`pandas`**](https://pandas.pydata.org/) | Data wrangling for CSV datasets. Handling missing values and rolling windows. *(Note: Requires `openpyxl` if reading .xlsx files)* | 🔴 **Critical** |
+| [**`numpy`**](https://numpy.org/) | Low-level matrix operations, especially for flattening images and reshaping arrays. | 🔴 **Critical** |
+| [**`seaborn`**](https://seaborn.pydata.org/) | **Statistical Data Visualization**. Used for creating informative Heatmaps (Confusion Matrices) and aesthetic distribution plots. | 🟡 **High** |
+| [**`matplotlib`**](https://matplotlib.org/) | Plotting training history, confusion matrices, and forecasting trends. | 🟡 **High** |
+| [**`opencv-python`**](https://pypi.org/project/opencv-python/) | Advanced image loading and processing for `cv2` based labs. | 🟡 **High** |
+| [**`Pillow` (PIL)**](https://python-pillow.org/) | Alternative lightweight image handling for simpler datasets. | 🟡 **High** |
 
 ---
 
