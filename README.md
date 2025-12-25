@@ -1,94 +1,86 @@
-# 🧠 Machine Learning & SVM Mastery
+# 🧠 Machine Learning Mastery: Neural Networks & SVM
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
+![Pandas](https://img.shields.io/badge/Data-Pandas-150458)
+![OpenCV](https://img.shields.io/badge/Vision-OpenCV%20%2F%20PIL-green)
 
-> A collection of Machine Learning experiments focusing on **Support Vector Machines (SVM)** for Classification and Regression tasks. This repository covers data processing, image classification, and time-series forecasting using real-world datasets.
+A comprehensive collection of Machine Learning experiments focusing on **Artificial Neural Networks (MLP)** and **Support Vector Machines (SVM)**. This repository covers data preprocessing, image classification, regression analysis, and time-series forecasting using real-world datasets.
 
 ---
 
 ## 📂 Project Structure
 
-This repository contains 6 key laboratories exploring different capabilities of SVM kernels (Linear, Poly, RBF).
+This repository is divided into two main sections based on the machine learning algorithms used.
 
-| Lab | Project Name | Type | Description |
-| :---: | :--- | :---: | :--- |
-| 01-02 | **Iris Classification** | `CSV Data` | Basic classification on the classic Iris dataset using varying SVM kernels. |
-| 03 | **Iris Image Vision** | `Comp Vision` | Image processing & classification of Iris flowers using flattened pixel arrays. |
-| 04 | **Protozoan Parasite** | `Medical AI` | Classifying microscopic images of protozoan parasites with confusion matrix analysis. |
-| 05 | **Blood Cells Detection** | `Medical AI` | detecting 4 types of white blood cells (Eosinophil, etc.) with auto-directory scanning. |
-| 06 | **COVID-19 Forecasting** | `Time Series` | Predicting new cases in Thailand using **SVR (Support Vector Regression)** with sliding window technique. |
+### 🕸️ Part 1: Neural Networks (Multi-layer Perceptron)
+Experiments using `MLPClassifier` and `MLPRegressor` to solve complex pattern recognition and forecasting tasks. Located in `Neural Network/`.
+
+| File Name | Task | Type | Key Concepts & Techniques |
+| :--- | :--- | :--- | :--- |
+| `LAB1_NN_Basic_Digits.py` | **Handwritten Digits** | Classification (Top-down) | Architecture comparison (Layers vs Nodes), Pivot Table analysis. |
+| `LAB2_NN_Face_Recognition.py` | **Face Recognition** | Image Classification | LFW Dataset, Visualizing predictions (Green/Red boxes). |
+| `LAB3_NN_Iris.py` | **Iris Classification** | CSV Data | Learning Rate analysis (10^-2 to 10^-5), Overfitting observations. |
+| `LAB4_NN_Fungi.py` | **Microscopic Fungi** | Image Processing | Image flattening, Normalization, RGB conversion, Custom dataset loading. |
+| `LAB5_NN_BloodCells.py` | **Blood Cell Classification** | Medical Imaging | Robust image loading, Performance tuning, comparing network sizes. |
+| `LAB6_NN_Covid_Forecast.py` | **COVID-19 Forecasting** | Time-Series | **Sliding Window** (Lookback), Recursive Forecasting, Trend prediction. |
+
+### 📐 Part 2: Support Vector Machines (SVM)
+Experiments exploring different SVM kernels (Linear, Polynomial, RBF) and hyperparameter tuning. Located in `SVM/`.
+
+| File Name | Task | Type | Description |
+| :--- | :--- | :--- | :--- |
+| `LEB 1...` | **Iris Classification** | Multiclass | Basic classification using Linear, Poly, and RBF kernels. |
+| `LEB 3...` | **Flower Images** | 3D/Complex Data | SVM on image data, handling non-linear patterns. |
+| `LEB 4...` | **Protozoan Parasite** | Image Classification | Dynamic kernel selection, Image normalization. |
+| `LEB 5...` | **Blood Cells** | Medical Imaging | SVM application on blood cell microscopy images. |
+| `LEB 6...` | **COVID-19 SVM** | Regression | SVR (Support Vector Regression) for smoothed COVID-19 cases. |
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies & Tools
 
-* **Language:** Python
-* **Machine Learning:** Scikit-Learn (SVC, SVR)
-* **Image Processing:** OpenCV (cv2)
-* **Data Manipulation:** NumPy, Pandas
+* **Core Logic:** Python, Scikit-Learn (sklearn)
+* **Data Manipulation:** Pandas, NumPy
 * **Visualization:** Matplotlib, Seaborn
+* **Image Processing:** OpenCV (`cv2`), Pillow (`PIL`)
+
+## 📊 Key Learnings
+
+1.  **Hyperparameter Tuning:** Analyzing the impact of Learning Rates (`10^-2` to `10^-5`) and Network Architecture (Hidden Layers & Nodes) on model accuracy.
+2.  **Data Preprocessing:** 
+    * **Images:** Resizing, Flattening (2D to 1D vector), and Min-Max Normalization.
+    * **Time-Series:** Creating sequences (Sliding Window technique) for supervised learning.
+3.  **Model Evaluation:** Using Accuracy Score, Confusion Matrices, and R2 Score for performance assessment.
 
 ---
 
-## 🚀 Key Features
+## 🚀 How to Run
 
-### 🌸 Image Classification (Labs 3-5)
-- **Pipeline:** Load Image $\rightarrow$ Grayscale $\rightarrow$ Resize (64x64) $\rightarrow$ Flatten $\rightarrow$ SVM.
-- **Comparison:** Evaluated `Linear`, `Polynomial`, and `RBF` kernels to find the best accuracy.
-- **Visualization:** Includes sample predictions (Green=Correct, Red=Incorrect) and Confusion Matrices.
-
-### 📈 Time-Series Forecasting (Lab 6)
-- **Method:** Sliding Window approach (using past 14 days to predict the next day).
-- **Model:** Support Vector Regression (SVR).
-- **Output:** Recursive forecasting for the next **90 days** (3 months).
-
----
-
-## 📊 Sample Results
-
-### Medical Image Classification (Blood Cells)
-*(Place your screenshot of the Blood Cell prediction/Confusion Matrix here)*
-![Blood Cell Result](./images/sample_blood_cell.png)
-
-### COVID-19 SVR Forecast
-*(Place your screenshot of the COVID Graph here)*
-![COVID Graph](./images/covid_forecast.png)
-
----
-
-## 💻 How to Run
-
-1.  **Clone the repository**
+1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/kim-sittikon/machine-learning.git](https://github.com/kim-sittikon/machine-learning.git)
+    git clone https://github.com/kim-sittikon/machine-learning.git
     cd machine-learning
     ```
-
-2.  **Install Dependencies**
+2.  **Install dependencies:**
     ```bash
-    pip install numpy pandas matplotlib scikit-learn opencv-python
+    pip install numpy pandas matplotlib scikit-learn opencv-python pillow
     ```
-
-3.  **Setup Datasets**
-    * Download datasets from Kaggle (links provided in each Lab file).
-    * Or use the provided `setup_dataset.py` script to organize files from your Downloads folder automatically.
-
-4.  **Run a Lab**
-    ```bash
-    python lab06_covid_forecasting.py
-    ```
+3.  **Navigate and Run:**
+    *   For Neural Networks:
+        ```bash
+        cd "Neural Network"
+        python LAB6_NN_Covid_Forecast.py
+        ```
+    *   For SVM:
+        ```bash
+        cd SVM
+        python "LEB 6 - SVM with Smoothed COVID-19 Data CSV.py"
+        ```
 
 ---
 
-## 👨‍💻 Author
-
-**Kim Sittikon**
-* Computer Engineering Student @ RMUTT CPE 🇹🇭
-* Interests: Web Development, Cloud Computing, Cybersecurity, and AI.
-
----
-*Created for Machine Learning Course 2025.*
+### 👨‍💻 Author
+**Sittikorn Bunna (Kim)**  
+Computer Engineering Student @ RMUTT  
+*Exploring the world of AI & Cloud Computing.*
