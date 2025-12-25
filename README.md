@@ -115,5 +115,3 @@ pip install openpyxl
   </a>
 </div>
 
----
-*Built with ❤️ for AI Research.*
