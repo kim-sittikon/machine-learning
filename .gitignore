@@ -1,6 +1,6 @@
 
 .venv/
-__pycache__/
-*.pyc
-dataset/
-Neural Network/dataset/
+**/__pycache__/
+**/*.pyc
+**/dataset/
+~$*
