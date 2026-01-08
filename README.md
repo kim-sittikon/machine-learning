@@ -82,6 +82,26 @@ pip install openpyxl
 | **LEB 05** | **Hemo-Analysis** | Sigmoid/RBF | Binary/Multi-class classification of blood cell types. |
 | **LEB 06** | **Pandemic Trends** | Regression | Non-linear regression (SVR) for modeling infection rates. |
 
+
+### 🖼️ Module 3: Convolutional Neural Networks (CNN)
+*Located in `CNN/`*
+
+| Lab | Project Name | Type | Key Concepts |
+| :--- | :--- | :--- | :--- |
+| **Lab 01** | **Digits Classification** | 🔢 Image | • Custom CNN Architectures<br>• Comparative Analysis of Network Depth |
+| **Lab 02** | **Face Recognition** | 👤 Vision | • LFW Dataset<br>• Complex Image Processing Pipelines |
+| **Lab 03** | **Iris Classification** | 🌺 Tabular | • 1D-CNN for Tabular Data<br>• Learning Rate & Batch Size Tuning |
+| **Lab 04** | **Fungi Specimen** | 🍄 Bio-Vision | • Microscopic Image Classification<br>• Network Size Impact Analysis |
+| **Lab 05** | **Blood Cell Analysis** | 🩸 Medical | • Medical Imaging with CNNs<br>• Automated Cell Type Detection |
+| **Lab 06** | **COVID-19 Forecast** | 📈 Time-Series | • 1D-CNN for Time-Series Forecasting<br>• Temporal Pattern Recognition |
+
+### 🚀 Module 4: Deep CNN (Transfer Learning)
+*Located in `DCNN/`*
+
+| Lab | Project Name | Models | Description |
+| :--- | :--- | :--- | :--- |
+| **Lab 01** | **Advanced Digits** | VGG, ResNet, DenseNet | Comparative study of pre-trained architectures vs custom models. |
+
 ---
 
 ## 🚀 Quick Start Guide
