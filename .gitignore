@@ -4,3 +4,14 @@
 **/*.pyc
 **/dataset/
 ~$*
+
+# Datasets (large files)
+Set Load/
+*.h5
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
