@@ -4,6 +4,7 @@
 ### Advanced Neural Networks (MLP) & Support Vector Machines (SVM)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
@@ -121,9 +122,21 @@ pip install openpyxl
 ### 🚀 Module 4: Deep CNN (Transfer Learning)
 *Located in `DCNN/`*
 
-| Lab | Project Name | Models | Description |
-| :--- | :--- | :--- | :--- |
-| **Lab 01** | [**Advanced Digits**](DCNN/LAB1_DCNN_Digits.py) | VGG, ResNet, DenseNet | Comparative study of pre-trained architectures vs custom models. |
+> 🔥 **Powered by TensorFlow & Keras** — Using pre-trained ImageNet weights for Transfer Learning
+
+| Lab | Project Name | Models Used | Image Sizes | Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **Lab 01** | [**Handwritten Digits**](DCNN/LAB1_DCNN_Digits.py) | VGG16, ResNet50, DenseNet121, MobileNetV2 | 100×100 | • MNIST via Pre-trained DCNNs<br>• Baseline for Transfer Learning |
+| **Lab 02** | [**Face Recognition**](DCNN/LAB2_DCNN_FaceRec.py) | VGG16, ResNet50, DenseNet121, MobileNetV2 | 50×50, 100×100 | • LFW Dataset<br>• Grayscale → RGB Conversion<br>• Recognition vs Classification Analysis |
+| **Lab 03** | [**Fungi Classification**](DCNN/LAB3_DCNN_Fungi.py) | VGG16, ResNet50, DenseNet121, MobileNetV2 | 50×50, 150×150 | • Microscopic Image Analysis<br>• DeFungi Dataset |
+| **Lab 04** | [**Sports Recognition**](DCNN/LAB4_DCNN_Sports.py) | VGG16, ResNet50, DenseNet121, MobileNetV2 | 50×50, 200×200 | • 100 Sports Classes<br>• Grad-CAM Heatmap Support |
+| **Lab 05** | [**COVID-19 Detection**](DCNN/LAB5_DCNN_Covid19.py) | VGG16, ResNet50, DenseNet121, MobileNetV2 | 120×120, 224×224 | • X-ray Image Classification<br>• Medical Imaging Pipeline<br>• Auto Train/Val Split |
+
+#### 📊 DCNN Performance Metrics
+All DCNN labs evaluate models using:
+- **Training Accuracy** — Model's fit on training data
+- **Validation Accuracy** — Generalization during training
+- **Test Accuracy, Precision, Recall** — Final evaluation metrics
 
 ---
 
